@@ -1,4 +1,4 @@
-import { Label } from "@radix-ui/react-select";
+import { Label } from "../ui/label";
 import { Plus } from "lucide-react";
 import { Button } from "../ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "../ui/card";
@@ -40,7 +40,7 @@ export default function AddCategory({
       <CardContent>
         <div className="space-y-4">
           <div className="space-y-2">
-            <Label>Category Name</Label>
+            <Label htmlFor="new-category">Category Name</Label>
             <Input
               id="new-category"
               placeholder="Enter category name"
@@ -53,7 +53,7 @@ export default function AddCategory({
           </div>
 
           <div className="space-y-2">
-            <Label>Time (optional)</Label>
+            <Label htmlFor="category-time">Time (optional)</Label>
             <Input
               id="category-time"
               type="time"

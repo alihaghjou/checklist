@@ -1,11 +1,11 @@
 import {
-  Label,
   Select,
   SelectTrigger,
   SelectValue,
   SelectContent,
   SelectItem,
 } from "@radix-ui/react-select";
+import { Label } from "../ui/label";
 import { Plus } from "lucide-react";
 import { Button } from "../ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "../ui/card";
@@ -49,7 +49,7 @@ export default function AddItem({
       <CardContent>
         <div className="space-y-4">
           <div className="space-y-2">
-            <Label>Item Text</Label>
+            <Label htmlFor="new-item">Item Text</Label>
             <Input
               id="new-item"
               placeholder="Enter item text"
@@ -62,7 +62,7 @@ export default function AddItem({
           </div>
 
           <div className="space-y-2">
-            <Label>Category</Label>
+            <Label htmlFor="category-select">Category</Label>
             <Select
               value={selectedCategory}
               onValueChange={setSelectedCategory}
