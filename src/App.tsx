@@ -53,13 +53,12 @@ export default function Home() {
     localStorage.setItem("checklist-categories", JSON.stringify(categories));
   }, [categories]);
 
-  // Add a new item
-
-  // Add a new category
-
   return (
     <main className="container mx-auto p-4 max-w-4xl">
-      <h1 className="text-3xl font-bold text-center mb-8">Smart Checklist</h1>
+      <h1>
+        <div className="text-3xl font-bold text-center mb-2">Listium</div>
+        <div className="text-center mb-8 text-xl font-bold">The Smart Checklist</div>
+      </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         {/* Add new item */}
