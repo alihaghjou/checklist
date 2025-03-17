@@ -2,7 +2,16 @@ import { useState, useEffect } from "react";
 import AddItem from "./components/section/addItem";
 import AddCategory from "./components/section/addCategory";
 import MainDisplay from "./components/section/display/mainDisplay";
+import { ModeToggle } from "./components/mode-toggle";
 
+/* 
+Todo: 
+send notification
+add description????
+add due date
+ultimate: export to mobile
+
+*/
 // Types
 export interface ChecklistItem {
   id: string;
@@ -55,6 +64,7 @@ export default function Home() {
 
   return (
     <main className="container mx-auto p-4 max-w-4xl">
+      <ModeToggle />
       <h1>
         <div className="text-3xl font-bold text-center mb-2">Listium</div>
         <div className="text-center mb-8 text-xl font-bold">The Smart Checklist</div>

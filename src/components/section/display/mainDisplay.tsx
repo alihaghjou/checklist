@@ -83,7 +83,7 @@ export default function MainDisplay({
                 <CardTitle className="text-xl">
                   <label
                     htmlFor={`category-${category.id}`}
-                    className="cursor-pointer"
+                    className="cursor-pointer capitalize"
                   >
                     {category.name}
                   </label>
@@ -135,7 +135,7 @@ export default function MainDisplay({
                     <label
                       htmlFor={`item-${item.id}`}
                       className={cn(
-                        "cursor-pointer",
+                        "cursor-pointer capitalize",
                         item.completed && "line-through text-muted-foreground"
                       )}
                     >
